@@ -2,17 +2,20 @@
   {
     "name": "Arey",
     "realm": "Terokkar",
-    "faction": "Horde"
+    "faction": "Horde",
+    "announce": ""
   },
   {
     "name": "Ukrainian Alliance",
     "realm": "Terokkar",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": "Шукаємо впевнених хілів та варлока для рейдів у складі другого статіка. Плануємо другим складом закрити фул гер та поступово освоювати міф, граючи 1-2 РТ на тиждень. Від вас треба 425+ ілвл та досвід принаймні 6/9 H."
   },
   {
     "name": "Knaipa Variativ",
     "realm": "Terokkar",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": ""
   },
   {
     "name": "Komora",
@@ -22,12 +25,14 @@
   {
     "name": "Tauren Milfs",
     "realm": "Tarren Mill",
-    "faction": "Horde"
+    "faction": "Horde",
+    "announce": ""
   },
   {
     "name": "MRIYA",
     "realm": "Silvermoon",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": ""
   },
   {
     "name": "Ukraine",
@@ -37,17 +42,20 @@
   {
     "name": "Synevyr",
     "realm": "Silvermoon",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": ""
   },
   {
     "name": "BAPTA KOTIB",
     "realm": "Silvermoon",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": ""
   },
   {
     "name": "Ababagalamaga",
     "realm": "Ravencrest",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": ""
   },
   {
     "name": "Bavovna",
