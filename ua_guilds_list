@@ -1,46 +1,57 @@
 [
   {
     "name": "Arey",
-    "realm": "Terokkar"
+    "realm": "Terokkar",
+    "faction": "Horde"
   },
   {
     "name": "Ukrainian Alliance",
-    "realm": "Terokkar"
+    "realm": "Terokkar",
+    "faction": "Alliance"
   },
   {
     "name": "Knaipa Variativ",
-    "realm": "Terokkar"
+    "realm": "Terokkar",
+    "faction": "Alliance"
   },
   {
     "name": "Komora",
-    "realm": "Terokkar"
+    "realm": "Terokkar",
+    "faction": "Alliance"
   },
   {
     "name": "Tauren Milfs",
-    "realm": "Tarren Mill"
+    "realm": "Tarren Mill",
+    "faction": "Horde"
   },
   {
     "name": "MRIYA",
-    "realm": "Silvermoon"
+    "realm": "Silvermoon",
+    "faction": "Alliance"
   },
   {
     "name": "Ukraine",
-    "realm": "Silvermoon"
+    "realm": "Silvermoon",
+    "faction": "Alliance"
   },
   {
     "name": "Synevyr",
-    "realm": "Silvermoon"
+    "realm": "Silvermoon",
+    "faction": "Alliance"
   },
   {
     "name": "BAPTA KOTIB",
-    "realm": "Silvermoon"
+    "realm": "Silvermoon",
+    "faction": "Alliance"
   },
   {
     "name": "Ababagalamaga",
-    "realm": "Ravencrest"
+    "realm": "Ravencrest",
+    "faction": "Alliance"
   },
   {
     "name": "Bavovna",
-    "realm": "Twisting Nether"
+    "realm": "Twisting Nether",
+    "faction": "Horde"
   },
 ]
