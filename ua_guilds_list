@@ -3,63 +3,77 @@
     "name": "Arey",
     "realm": "Terokkar",
     "faction": "Horde",
-    "announce": ""
+    "announce": "",
+    "discord": "https://discord.com/BG8MVrAuk7"
   },
   {
     "name": "Ukrainian Alliance",
     "realm": "Terokkar",
     "faction": "Alliance",
-    "announce": "Шукаємо впевнених хілів та варлока для рейдів у складі другого статіка. Плануємо другим складом закрити фул гер та поступово освоювати міф, граючи 1-2 РТ на тиждень. Від вас треба 425+ ілвл та досвід принаймні 6/9 H."
+    "announce": "Шукаємо впевнених хілів та варлока для рейдів у складі другого статіка. Плануємо другим складом закрити фул гер та поступово освоювати міф, граючи 1-2 РТ на тиждень. Від вас треба 425+ ілвл та досвід принаймні 6/9 H.",
+    "discord": "https://bit.ly/ua_alliance"
   },
   {
     "name": "Knaipa Variativ",
     "realm": "Terokkar",
     "faction": "Alliance",
-    "announce": ""
+    "announce": "",
+    "discord": "https://discord.com/eefuUXs"
   },
   {
     "name": "Komora",
     "realm": "Terokkar",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "Tauren Milfs",
     "realm": "Tarren Mill",
     "faction": "Horde",
-    "announce": ""
+    "announce": "",
+    "discord": "https://bit.ly/Tauren_Milfs"
   },
   {
     "name": "MRIYA",
     "realm": "Silvermoon",
     "faction": "Alliance",
-    "announce": ""
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "Ukraine",
     "realm": "Silvermoon",
-    "faction": "Alliance"
+    "faction": "Alliance",
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "Synevyr",
     "realm": "Silvermoon",
     "faction": "Alliance",
-    "announce": ""
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "BAPTA KOTIB",
     "realm": "Silvermoon",
     "faction": "Alliance",
-    "announce": ""
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "Ababagalamaga",
     "realm": "Ravencrest",
     "faction": "Alliance",
-    "announce": ""
+    "announce": "",
+    "discord": ""
   },
   {
     "name": "Bavovna",
     "realm": "Twisting Nether",
-    "faction": "Horde"
+    "faction": "Horde",
+    "announce": "",
+    "discord": ""
   },
 ]
