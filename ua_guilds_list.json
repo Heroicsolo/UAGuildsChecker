@@ -1,0 +1,92 @@
+{
+"guilds": [
+{
+"name": "Arey",
+"realm": "Terokkar",
+"faction": "Horde",
+"announce": "",
+"discord": "https://discord.com/BG8MVrAuk7",
+"desc": "Створена на початку 2023 року, перша українська гільдія Орди на сервері Terokkar. Невелика гільдія для гри на середньому рівні, для закриття ключів, комфортного проходження рейдів «нормалу» та «гер»."
+},
+{
+"name": "Ukrainian Alliance",
+"realm": "Terokkar",
+"faction": "Alliance",
+"announce": "Шукаємо впевнених хілів та варлока для рейдів у складі другого статіка. Плануємо другим складом закрити фул гер та поступово освоювати міф, граючи 1-2 РТ на тиждень. Від вас треба 425+ ілвл та досвід принаймні 6/9 H.",
+"discord": "https://bit.ly/ua_alliance",
+"desc": "Створена на початку 2023 року, ця гільдія поєднує в собі досить сильних рейдерів, гарне почуття гумору та здорову атмосферу спілкування. Відкриті для новачків, за мету мають закриття міфік рейду у кожному патчі, у комфортному темпі."
+},
+{
+"name": "Knaipa Variativ",
+"realm": "Terokkar",
+"faction": "Alliance",
+"announce": "",
+"discord": "https://discord.com/eefuUXs",
+"desc": "Мабуть, найстаріша українська гільдія, існує з 2014 року. Доволі активно рейдить, кожен патч закриває героїк і трішки освоює міфік. Є свої премейди на рбг."
+},
+{
+"name": "Komora",
+"realm": "Terokkar",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Альтогільдія Кнайпи."
+},
+{
+"name": "Tauren Milfs",
+"realm": "Tarren Mill",
+"faction": "Horde",
+"announce": "",
+"discord": "https://bit.ly/Tauren_Milfs",
+"desc": "Найбільша та найдавніша українська гільдія Орди. Закриває героїк та міф рейди. Має активну ПВП спільноту."
+},
+{
+"name": "MRIYA",
+"realm": "Silvermoon",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Досить потужна та велика українська гільдія на сервері Silvermoon, яка закриває нормал та героїк рейди. В минулому гільдія BAYRAKTAR."
+},
+{
+"name": "Ukraine",
+"realm": "Silvermoon",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Невеличка гільдія на Silvermoon. Гільдійних рейдів поки що нема, але ви це можете виправити)"
+},
+{
+"name": "Synevyr",
+"realm": "Silvermoon",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Гільдія, створена частиною гравців з MRIYA (в минулому BAYRAKTAR). Мають за мету прогрес, але без зайвого стресу, бігають разом в ключі."
+},
+{
+"name": "BAPTA KOTIB",
+"realm": "Silvermoon",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Доволі велика українська гільдія на сервері Silvermoon, яка закриває нормал та освоює героїк рейди."
+},
+{
+"name": "Ababagalamaga",
+"realm": "Ravencrest",
+"faction": "Alliance",
+"announce": "",
+"discord": "",
+"desc": "Не дуже велика, але доволі активна українська гільдія, яка закриває нормал рейди."
+},
+{
+"name": "Bavovna",
+"realm": "Twisting Nether",
+"faction": "Horde",
+"announce": "",
+"discord": "",
+"desc": "Гільдія була створення з метою об'єднання українських гравців на сервері Twisting Nether. Ми ще поки тільки починаємо, тому наразі наша ціль - знайти якомога більше бажаючих вступити в гільдію і грати разом."
+}
+]
+}
