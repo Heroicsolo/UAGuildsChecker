@@ -87,6 +87,22 @@
             "announce": "",
             "discord": "",
             "desc": "Гільдія була створення з метою об'єднання українських гравців на сервері Twisting Nether. Ми ще поки тільки починаємо, тому наразі наша ціль - знайти якомога більше бажаючих вступити в гільдію і грати разом."
+        },
+        {
+            "name": "Draenei Milfs",
+            "realm": "Tarren Mill",
+            "faction": "Alliance",
+            "announce": "",
+            "discord": "",
+            "desc": ""
+        },
+        {
+            "name": "Borsch Battalion",
+            "realm": "Kazzak",
+            "faction": "Horde",
+            "announce": "",
+            "discord": "",
+            "desc": ""
         }
     ]
 }
