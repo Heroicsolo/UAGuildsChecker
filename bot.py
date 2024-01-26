@@ -538,12 +538,16 @@ async def proccess_command(command, args, inter):
 
                 max_guilds_count = max(m_guilds_count, hc_guilds_count, nm_guilds_count)
 
+                m_score = 2 * m_guilds_count - m_rank
+                hc_score = 2 * hc_guilds_count - hc_rank
+                nm_score = 2 * nm_guilds_count - nm_rank
+
                 if (min_rank == 0):
                   min_rank = 2 * max_guilds_count
               
                 rank_points = max(0, 2 * max_guilds_count - min_rank)
               
-                score = floor(m_prog * m_coef + hc_prog * hc_coef + nm_prog) + rank_points
+                score = floor(m_score * m_coef + hc_score * hc_coef + nm_score)
 
                 nm_prog_str = str(nm_prog) + "/" + str(bosses_count) + " N "
                 hc_prog_str = str(hc_prog) + "/" + str(bosses_count) + " H "
