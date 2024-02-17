@@ -114,17 +114,17 @@ MAX_RESULTS = 25
 file = open("info.json", "r")
 info = json.load(file)
 discordToken = info[0]
-bot_channels = [info[3],info[4],info[5]]
-officer_channels = [None, 1077559955399381002, 1135632187841069086]
-vending_channels = [1131161239955976192, None, None]
+bot_channels = [info[3],info[4],info[5],info[6]]
+officer_channels = [None, 1077559955399381002, 1135632187841069086, 1150558321229692958]
+vending_channels = [1131161239955976192, None, None, None]
 bot_channel_links = ["<#" + str(bot_channels[0]) + ">","<#" + str(bot_channels[1]) + ">","<#" + str(bot_channels[2]) + ">"]
 bnetToken=[info[1],info[2]]
-test_guilds = [1017729130407678016, 1075902688790859817, 502062965462269953] #502062965462269953 - MRIYA
-raider_io_bot_id = [None, 1101472816068575232, 1142504499630583940]
-officer_role_ids = [None, "1076056736730988594", "1140704158735945838"]
-moder_role_ids = [None, "1082275372726489140", "968091538053816320"]
-ua_wow_guilds = [('terokkar', 'Arey'), ('terokkar', 'Ukrainian-alliance'), ('terokkar', 'Knaipa-variativ'), ('terokkar', 'Komora'), ('silvermoon', 'MRIYA'), ('silvermoon', 'Ukraine'), ('ravencrest', 'Ababagalamaga'), ('tarren-mill', 'Tauren-milfs'), ('silvermoon', 'BAPTA-KOTIB'), ('tarren-mill', 'Draenei-milfs'), ('twisting-nether', 'MOROK'), ('kazzak', 'Borsch Battalion'), ('silvermoon', 'Mythologeme'), ('tarren-mill', 'Нехай-Щастить'), ('tarren-mill', 'Mayhem-soul'), ('kazzak', 'HWG'), ('tarren-mill', 'The Toxic Avengers'), ('silvermoon', 'Героям Слава'), ('tarren-mill', 'Nomads TM')]
-ua_wow_guilds_names = ['Ukrainian Alliance', 'Tauren Milfs', 'Synevyr', 'Arey', 'Knaipa Variativ', 'Ukraine', 'Bavovna', 'Komora', 'MRIYA', 'Borsch Battalion', 'Mythologeme', 'Нехай Щастить', 'Mayhem Soul', 'HWG', 'Героям Слава', 'Nomads TM']
+test_guilds = [1017729130407678016, 1075902688790859817, 502062965462269953, 1136709124839723109] #502062965462269953 - MRIYA
+raider_io_bot_id = [None, 1101472816068575232, 1142504499630583940, 1174499934888808450]
+officer_role_ids = [None, "1076056736730988594", "1140704158735945838", "1205706354837295174"]
+moder_role_ids = [None, "1082275372726489140", "968091538053816320", None]
+ua_wow_guilds = [('terokkar', 'Arey'), ('terokkar', 'Ukrainian-alliance'), ('terokkar', 'Knaipa-variativ'), ('terokkar', 'Komora'), ('silvermoon', 'MRIYA'), ('silvermoon', 'Ukraine'), ('ravencrest', 'Ababagalamaga'), ('tarren-mill', 'Tauren-milfs'), ('silvermoon', 'BAPTA-KOTIB'), ('tarren-mill', 'Draenei-milfs'), ('twisting-nether', 'MOROK'), ('kazzak', 'Borsch Battalion'), ('silvermoon', 'Mythologeme'), ('tarren-mill', 'Нехай-Щастить'), ('tarren-mill', 'Mayhem-soul'), ('tarren-mill', 'The Toxic Avengers'), ('silvermoon', 'Героям Слава'), ('tarren-mill', 'Nomads TM'), ('terokkar', 'Khorugva'), ('silvermoon', 'BCECBIT')]
+ua_wow_guilds_names = ['Ukrainian Alliance', 'Tauren Milfs', 'Synevyr', 'Arey', 'Knaipa Variativ', 'Ukraine', 'Bavovna', 'Komora', 'MRIYA', 'Borsch Battalion', 'Mythologeme', 'Нехай Щастить', 'Mayhem Soul', 'HWG', 'Героям Слава', 'Nomads TM', 'Khorugva', 'BCECBIT']
 whitelist_guilds = ['Нехай Щастить', 'Бавовна', 'Козаки', 'Эйситерия', 'СБОРНАЯ УКРАИНЫ', 'Героям Слава', 'Фортеця']
 requests_count = 0
 users_requests_timestamps = {}
@@ -321,7 +321,7 @@ async def on_raw_reaction_add(payload):
           await managerUsr.send("Нове замовлення худі від " + user.name)
           await user.send(ORDER_SENT_MSG)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953], description="Скинути кількість страйків у гравця")
+@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Скинути кількість страйків у гравця")
 async def resetstrikes(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -329,7 +329,7 @@ async def resetstrikes(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953], description="Перевірити, чи є гравець у білому списку")
+@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Перевірити, чи є гравець у білому списку")
 async def checkwhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -337,7 +337,7 @@ async def checkwhitelist(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953], description="Додати гравця у білий список")
+@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Додати гравця у білий список")
 async def addtowhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -345,7 +345,7 @@ async def addtowhitelist(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953], description="Прибрати гравця з білого списку")
+@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Прибрати гравця з білого списку")
 async def remfromwhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
