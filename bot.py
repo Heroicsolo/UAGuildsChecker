@@ -115,26 +115,29 @@ file = open("info.json", "r")
 info = json.load(file)
 discordToken = info[0]
 bot_channels = [info[3],info[4],info[5],info[6]]
-officer_channels = [None, 1077559955399381002, 1135632187841069086, 1150558321229692958]
+officer_channels = [1158416664921124966, 1077559955399381002, 1135632187841069086, 1150558321229692958]
 vending_channels = [1131161239955976192, None, None, None]
 bot_channel_links = ["<#" + str(bot_channels[0]) + ">","<#" + str(bot_channels[1]) + ">","<#" + str(bot_channels[2]) + ">"]
 bnetToken=[info[1],info[2]]
-test_guilds = [1017729130407678016, 1075902688790859817, 502062965462269953, 1136709124839723109] #502062965462269953 - MRIYA
-raider_io_bot_id = [None, 1101472816068575232, 1142504499630583940, 1174499934888808450]
-officer_role_ids = [None, "1076056736730988594", "1140704158735945838", "1205706354837295174"]
-moder_role_ids = [None, "1082275372726489140", "968091538053816320", None]
-ua_wow_guilds = [('terokkar', 'Arey'), ('terokkar', 'Ukrainian-alliance'), ('terokkar', 'Knaipa-variativ'), ('terokkar', 'Komora'), ('silvermoon', 'MRIYA'), ('silvermoon', 'Ukraine'), ('ravencrest', 'Ababagalamaga'), ('tarren-mill', 'Tauren-milfs'), ('silvermoon', 'BAPTA-KOTIB'), ('tarren-mill', 'Draenei-milfs'), ('twisting-nether', 'MOROK'), ('kazzak', 'Borsch Battalion'), ('silvermoon', 'Mythologeme'), ('tarren-mill', 'Нехай-Щастить'), ('tarren-mill', 'Mayhem-soul'), ('tarren-mill', 'The Toxic Avengers'), ('silvermoon', 'Героям Слава'), ('tarren-mill', 'Nomads TM'), ('terokkar', 'Khorugva'), ('silvermoon', 'BCECBIT')]
-ua_wow_guilds_names = ['Ukrainian Alliance', 'Tauren Milfs', 'Synevyr', 'Arey', 'Knaipa Variativ', 'Ukraine', 'Bavovna', 'Komora', 'MRIYA', 'Borsch Battalion', 'Mythologeme', 'Нехай Щастить', 'Mayhem Soul', 'HWG', 'Героям Слава', 'Nomads TM', 'Khorugva', 'BCECBIT']
-whitelist_guilds = ['Нехай Щастить', 'Бавовна', 'Козаки', 'Эйситерия', 'СБОРНАЯ УКРАИНЫ', 'Героям Слава', 'Фортеця']
+test_guilds = [1017729130407678016, 1075902688790859817, 502062965462269953, 1136709124839723109]
+mplus_tracking_guilds = [1017729130407678016, 1075902688790859817, 502062965462269953, 1136709124839723109]
+raider_io_bot_ids = [1221776075298963538, 1221777709840072704, 1221776181326516284, 1217079714901131294, 1217079147919052851, 1217079276038258758, 1217079414588837890, 1217078860777263167, 1101472816068575232, 1142504499630583940, 1174499934888808450]
+officer_role_ids = ["1077312267391082526", "1076056736730988594", "1140704158735945838", "1205706354837295174"]
+moder_role_ids = ["1019249289672790076", "1082275372726489140", "968091538053816320", None]
+ua_wow_guilds = [('silvermoon', 'Dark Green'), ('silvermoon', 'Alphalogeme'), ('tarren-mill', 'Ryan Gosling'), ('silvermoon', 'iSHO'), ('ravencrest', 'Viysko NightElfiyske'), ('terokkar', 'Arey'), ('terokkar', 'Ukrainian-alliance'), ('silvermoon', 'MRIYA'), ('tarren-mill', 'Draenei-milfs'), ('twisting-nether', 'MOROK'), ('tarren-mill', 'The Toxic Avengers'), ('terokkar', 'Khorugva'), ('draenor', 'Ukrainian Cossacks'), ('tarren-mill', 'Wrong Tactics Folks'), ('tarren-mill', 'Tauren-milfs'), ('tarren-mill', 'Nomads TM'), ('terokkar', 'Knaipa-variativ'), ('kazzak', 'Borsch Battalion'), ('tarren-mill', 'Mayhem-soul'), ('tarren-mill', 'Нехай-Щастить'), ('silvermoon', 'Mythologeme'), ('twisting-nether', 'Glory to Ukraine'), ('silvermoon', 'BAPTA-KOTIB')] #('ravencrest', 'Ababagalamaga'), ('silvermoon', 'Pray for Ukraine'), ('twisting-nether', 'Glory to Ukraine')
+raiding_guilds = [('silvermoon', 'Dark Green'), ('silvermoon', 'Alphalogeme'), ('tarren-mill', 'Ryan Gosling'), ('silvermoon', 'iSHO'), ('silvermoon', 'Pray for Ukraine'), ('terokkar', 'Arey'), ('terokkar', 'Ukrainian-alliance'), ('silvermoon', 'MRIYA'), ('draenor', 'Ukrainian Cossacks'), ('draenor', 'Ukrainian Cossacks'), ('tarren-mill', 'Wrong Tactics Folks'), ('tarren-mill', 'Tauren-milfs'), ('tarren-mill', 'Nomads TM'), ('terokkar', 'Knaipa-variativ'), ('kazzak', 'Borsch Battalion'), ('tarren-mill', 'Нехай-Щастить'), ('silvermoon', 'Mythologeme'), ('ravencrest', 'Viysko NightElfiyske'), ('twisting-nether', 'Glory to Ukraine'), ('silvermoon', 'BAPTA-KOTIB')]
+ua_wow_guilds_names = ['Dark Green', 'Glory to Ukraine', 'Alphalogeme', 'Ryan Gosling', 'iSHO', 'Ukrainian Alliance', 'Tauren Milfs', 'Synevyr', 'Arey', 'Ukraine', 'Bavovna', 'Komora', 'MRIYA', 'Nomads TM', 'Khorugva', 'Ukrainian Cossacks', 'Glory to Ukraine', 'Knaipa Variativ', 'Нехай Щастить', 'Wrong Tactics Folks', 'Mythologeme', 'Borsch Battalion', 'Mayhem Soul', 'Pray for Ukraine', 'Viysko NightElfiyske', 'BAPTA KOTIB'] #'Ababagalamaga', 'HWG'
+whitelist_guilds = ['Dark Green', 'Glory to Ukraine', 'Alphalogeme', 'Ryan Gosling', 'iSHO', 'Tauren Milfs', 'Дякую за РТ', 'Нехай Щастить', 'Бавовна', 'Козаки', 'Эйситерия', 'СБОРНАЯ УКРАИНЫ', 'Героям Слава', 'Фортеця', 'Knaipa Variativ', 'Mythologeme', 'Pray for Ukraine', 'Borsch Battalion', 'HWG', 'BAPTA KOTIB', 'Mayhem Soul', 'Ukrainian Cossacks', 'Glory to Ukraine', 'Nomads TM', 'Wrong Tactics Folks', 'Viysko NightElfiyske']
 requests_count = 0
 users_requests_timestamps = {}
 
 PLAYER_REGEX = "https://raider.io/characters/eu/(.+)/(.+)\?+"
 
-LEVEL_CAP = 70
+LEVEL_CAP = 80
 MIN_ACHIEV_POINTS = 2500
-CURR_RAID_ID = 'amirdrassil-the-dreams-hope'
-LAST_BOSS_ID = 'fyrakk-the-blazing'
+CURR_RAID_IDS = ['nerubar-palace']
+LAST_BOSS_IDS = ['queen-ansurek']
+RAID_SHORT_NAMES = ['Nerubar Palace']
 NO_CHARS_FOUND = 'Знайдено 0 персонажів по заданим критеріям'
 NO_GUILD_FOUND = 'Гільдію не знайдено. Перевірте правильність написання назви серверу та гільдії.\nНаприклад: !{cmd} terokkar ukrainian-alliance 400'
 CMD_HELP_3_ARGS = 'Введіть команду в такому форматі: !{cmd} realm guild-name\nНаприклад: !{cmd} terokkar ukrainian-alliance'
@@ -154,7 +157,7 @@ intents.members = True
 
 bot = commands.Bot(command_prefix=disnake.ext.commands.when_mentioned, intents=intents)
 
-pool = redis.ConnectionPool(host='redis-19946.c300.eu-central-1-1.ec2.cloud.redislabs.com', port=19946, db=0, password="LTjgWW2L8iwA1XAoT9M3GEwz7VGVG5Lx")
+pool = redis.ConnectionPool(host='redis-13197.c250.eu-central-1-1.ec2.redns.redis-cloud.com', port=13197, db=0, password="zEmHCOcvEbqqp1g44hYB5yM5fxog06Ft")
 redis = redis.Redis(connection_pool=pool)
 
 async def no_guild_found_msg(command, inter):
@@ -168,8 +171,8 @@ async def cmd_help_msg(command, inter, msgtemplate):
 async def do_guild_request(guild, realm):
     return requests.get("https://raider.io/api/v1/guilds/profile?region=eu&realm=" + realm + "&name=" + guild + "&fields=members%2Craid_progression%2Craid_rankings")
 
-async def do_raid_request(difficulty):
-    return requests.get("https://raider.io/api/v1/raiding/progression?raid=" + CURR_RAID_ID + "&difficulty=" + difficulty + "&region=eu")
+async def do_raid_request(difficulty, raid_name):
+    return requests.get("https://raider.io/api/v1/raiding/progression?raid=" + raid_name + "&difficulty=" + difficulty + "&region=eu")
 
 async def proccess_guild_answer(prog_msg, answer, inter, returnmsg, command, args, role):
     if answer.status_code != 200:
@@ -213,11 +216,11 @@ def get_sorted_characters(prog_msg, inter, members, role, ilvl):
 
 @bot.event
 async def on_message(message):
-  if message.author.id == raider_io_bot_id[test_guilds.index(message.guild.id)] and len(message.embeds) > 0:
+  if raider_io_bot_ids.count(message.author.id) > 0 and len(message.embeds) > 0 and mplus_tracking_guilds.count(message.guild.id) > 0:
     if re.search('[А-Яа-яЁё]+', message.embeds[0].description) != None:
       party_players = re.findall(PLAYER_REGEX, message.embeds[0].description)
       whitelist_players = await get_whitelisted_players(party_players)
-      ua_players_list = await get_ua_players(party_players)
+      ua_players_list = await get_ua_players(party_players, message.guild.id)
       if (len(whitelist_players) >= len(party_players) or len(ua_players_list) == 0):
         return
       thread = await message.create_thread(name=str(datetime.now()), auto_archive_duration = 1440)
@@ -227,6 +230,25 @@ async def on_message(message):
       for name, strikes in ua_players_list.items():
         reply_text += name + " (Страйків: " + str(strikes) + ")\n"
       await thread.send(reply_text)
+  elif message.author.id == 203510229621538817:
+    msg = str(message.content)
+    if re.search('Jeeves Character System', msg) != None:
+      pattern = r'\|\d\s\|(\w+)\s+\|([^\|]+)'
+      matches = re.findall(pattern, msg)
+      reply_text = "Гільдії учасника: "
+      for match in matches:
+        guildName = await get_char_guild(match[0], match[1])
+        if guildName != None:
+          reply_text += "\n" + guildName
+      await message.channel.send(reply_text)
+
+async def get_char_guild(name, realm):
+  charresponse = requests.get("https://raider.io/api/v1/characters/profile?region=eu&realm=" + realm + "&name=" + name + "&fields=guild")
+  if charresponse.status_code == 200:
+    charcontent = charresponse.json()
+    if charcontent['guild'] != None:
+      return charcontent['guild']['name']
+    return None
 
 async def is_player_from_ua_guild(name, realm):
   charresponse = requests.get("https://raider.io/api/v1/characters/profile?region=eu&realm=" + realm + "&name=" + name + "&fields=guild")
@@ -255,25 +277,29 @@ async def get_whitelisted_players(party_players):
       print("whitelisted: " + x[1]+"-"+x[0])
   return results_list
 
-async def get_ua_players(party_players):
+async def get_ua_players(party_players, community_id):
   results_list = {}
   for x in party_players:
-    print(x[1]+"-"+x[0])
+    print(x[1]+"-"+x[0]+"-"+str(community_id))
     isUAPlayer = await is_player_from_ua_guild(x[1], x[0])
     if isUAPlayer:
-      strikes_count = redis.get(x[1]+"-"+x[0])
+      strikes_count = redis.get(x[1]+"-"+x[0]+"-"+str(community_id))
       if strikes_count == None:
         strikes_count = 0
       else:
         strikes_count = int(strikes_count)
       strikes_count += 1
-      redis.set(x[1]+"-"+x[0], strikes_count)
+      redis.set(x[1]+"-"+x[0]+"-"+str(community_id), strikes_count)
       results_list[x[1]] = strikes_count
   return results_list
 
 @bot.event
 async def on_raw_reaction_add(payload):
-    channel = await bot.fetch_channel(payload.channel_id)
+    try:
+      channel = await bot.fetch_channel(payload.channel_id)
+    except:
+      return
+
     message = await channel.fetch_message(payload.message_id)
     user = await bot.fetch_user(payload.user_id)
     emoji = payload.emoji
@@ -321,7 +347,7 @@ async def on_raw_reaction_add(payload):
           await managerUsr.send("Нове замовлення худі від " + user.name)
           await user.send(ORDER_SENT_MSG)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Скинути кількість страйків у гравця")
+@bot.slash_command(guild_ids=test_guilds, description="Скинути кількість страйків у гравця")
 async def resetstrikes(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -329,7 +355,7 @@ async def resetstrikes(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Перевірити, чи є гравець у білому списку")
+@bot.slash_command(guild_ids=test_guilds, description="Перевірити, чи є гравець у білому списку")
 async def checkwhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -337,7 +363,7 @@ async def checkwhitelist(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Додати гравця у білий список")
+@bot.slash_command(guild_ids=test_guilds, description="Додати гравця у білий список")
 async def addtowhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -345,7 +371,7 @@ async def addtowhitelist(inter, charname:str, realm:str):
   else:
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
-@bot.slash_command(guild_ids=[1075902688790859817, 502062965462269953, 1136709124839723109], description="Прибрати гравця з білого списку")
+@bot.slash_command(guild_ids=test_guilds, description="Прибрати гравця з білого списку")
 async def remfromwhitelist(inter, charname:str, realm:str):
   await inter.response.defer()
   if inter.channel.id in officer_channels:
@@ -354,10 +380,18 @@ async def remfromwhitelist(inter, charname:str, realm:str):
       await inter.followup.send('Гільдійний Ревізор працює з цією командою лише в каналі офіцерів', ephemeral=True)
 
 @bot.slash_command(guild_ids=test_guilds, description="Дізнатися список українських гільдій на EU та їх рейдовий прогрес")
-async def uaguilds(inter):
+async def uaguilds(inter, difficulty:str="all"):
+    difficulty = difficulty.lower()
     await inter.response.defer()
+    # Validate the additional_string parameter
+    if difficulty not in ["n", "h", "m", "all"]:
+        await inter.followup.send(
+            "Помилка: Параметр має бути одним із наступних значень: 'n' - Normal, 'h' - Heroic, 'm' - Mythic, або 'all' - сумарний рахунок.",
+            ephemeral=True,
+        )
+        return
     if inter.channel.id in bot_channels:
-        await proccess_command('uaguilds', ['uaguilds', None, None, None, None], inter)
+        await proccess_command('uaguilds', ['uaguilds', None, None, None, None, difficulty], inter)
     else:
         await inter.followup.send('Гільдійний Ревізор працює лише в каналі ' + bot_channel_links[test_guilds.index(inter.guild.id)], ephemeral=True)
 
@@ -428,12 +462,12 @@ async def proccess_command(command, args, inter):
         await find_guild_master(answer, inter, args[2], args[1])
         requests_count -= 1
     elif command == 'resetstrikes':
-        characterStr = args[1]+'-'+args[2]
+        characterStr = args[1]+'-'+args[2]+'-'+str(inter.guild.id)
         redis.set(characterStr, 0)
         await inter.followup.send("Персонаж " + characterStr + " тепер має 0 страйків", ephemeral=EPHEMERAL_ANSWERS)
         requests_count -= 1
     elif command == 'addtowhitelist':
-        characterStr = args[1]+'-'+args[2]
+        characterStr = args[1]+'-'+args[2]+'-'+str(inter.guild.id)
         if not is_player_in_whitelist(characterStr):
           redis.lpush('whitelist', characterStr)
           await inter.followup.send("Персонаж " + characterStr + " був внесений у білий список", ephemeral=EPHEMERAL_ANSWERS)
@@ -441,68 +475,96 @@ async def proccess_command(command, args, inter):
           await inter.followup.send("Персонаж " + characterStr + " вже присутній у білому списку", ephemeral=EPHEMERAL_ANSWERS)
         requests_count -= 1
     elif command == 'remfromwhitelist':
-        characterStr = args[1]+'-'+args[2]
+        characterStr = args[1]+'-'+args[2]+'-'+str(inter.guild.id)
         if is_player_in_whitelist(characterStr):
           redis.lrem('whitelist', 0, characterStr)
           await inter.followup.send("Персонаж " + characterStr + " був видалений з білого списку", ephemeral=EPHEMERAL_ANSWERS)
         requests_count -= 1
     elif command == 'checkwhitelist':
-        characterStr = args[1]+'-'+args[2]
+        characterStr = args[1]+'-'+args[2]+'-'+str(inter.guild.id)
         if not is_player_in_whitelist(characterStr):
           await inter.followup.send("Персонаж " + characterStr + " НЕ зареєстрований у білому списку", ephemeral=EPHEMERAL_ANSWERS)
         else:
           await inter.followup.send("Персонаж " + characterStr + " присутній у білому списку", ephemeral=EPHEMERAL_ANSWERS)
         requests_count -= 1
     elif command == 'uaguilds':
+        difficulty = args[5]
         prog_msg = 'Дивлюся список українських гільдій на EU...'
         await inter.followup.send(prog_msg, ephemeral=EPHEMERAL_ANSWERS)
-        returnmsg = "Українські гільдії на EU: \n"
+        returnmsg = "Рейдовий прогрес гільдій спільноти "
+        if difficulty == "all":
+           returnmsg += "(сумарна статистика):\n"
+        elif difficulty == "n":
+           returnmsg += "(нормальна складність):\n"
+        elif difficulty == "h":
+           returnmsg += "(героїчна складність):\n"
+        elif difficulty == "m":
+           returnmsg += "(міфічна складність):\n"
         result_list = {}
         idx = 0
-        all_count = len(ua_wow_guilds)
+        all_count = len(raiding_guilds)
+
 
         await inter.edit_original_response(prog_msg + ' [' + (str)(floor(100 * idx / (all_count + 1))) + '%]')
 
-        nm_answer_parsed = False
-        hc_answer_parsed = False
-        m_answer_parsed = False
-        raid_answer_nm = await do_raid_request("normal")
-        if raid_answer_nm.status_code == 200:
-          raid_answer_nm = raid_answer_nm.json()
-          nm_answer_parsed = True
-        raid_answer_hc = await do_raid_request("heroic")
-        if raid_answer_hc.status_code == 200:
-          raid_answer_hc = raid_answer_hc.json()
-          hc_answer_parsed = True
-        raid_answer_m = await do_raid_request("mythic")
-        if raid_answer_m.status_code == 200:
-          raid_answer_m = raid_answer_m.json()
-          m_answer_parsed = True
+        raid_answers_nm = {}
+        raid_answers_hc = {}
+        raid_answers_m = {}
 
-        nm_guilds_count = 0
+        nm_answers = {}
+        hc_answers = {}
+        m_answers = {}
 
-        if nm_answer_parsed == True:
-          for nm_boss_prog in raid_answer_nm["progression"]:
-            nm_guilds_count += (int)(nm_boss_prog["totalGuilds"])
+        nm_guilds_count = {}
+        hc_guilds_count = {}
+        m_guilds_count = {}
 
-        hc_guilds_count = 0
+        max_guild_name_length = 0
 
-        if hc_answer_parsed == True:
-          for hc_boss_prog in raid_answer_hc["progression"]:
-            hc_guilds_count += (int)(hc_boss_prog["totalGuilds"])
+        for raid_id in CURR_RAID_IDS:
+          nm_guilds_count[raid_id] = 0
+          hc_guilds_count[raid_id] = 0
+          m_guilds_count[raid_id] = 0
 
-        m_guilds_count = 0
+          raid_answer_nm = await do_raid_request("normal", raid_id)
 
-        if m_answer_parsed == True:
-          for m_boss_prog in raid_answer_m["progression"]:
-            m_guilds_count += (int)(m_boss_prog["totalGuilds"])
+          if raid_answer_nm.status_code == 200:
+            raid_answers_nm[raid_id] = raid_answer_nm.json()
+            nm_answers[raid_id] = True
+            for nm_boss_prog in raid_answers_nm[raid_id]["progression"]:
+              nm_guilds_count[raid_id] += (int)(nm_boss_prog["totalGuilds"])
+          else:
+            nm_answers[raid_id] = False
 
-        print("nm: " + (str)(nm_guilds_count) + ", hc: " + (str)(hc_guilds_count) + ", m: " + (str)(m_guilds_count))
+          raid_answer_hc = await do_raid_request("heroic", raid_id)
+
+          if raid_answer_hc.status_code == 200:
+            raid_answers_hc[raid_id] = raid_answer_hc.json()
+            hc_answers[raid_id] = True
+            for hc_boss_prog in raid_answers_hc[raid_id]["progression"]:
+              hc_guilds_count[raid_id] += (int)(hc_boss_prog["totalGuilds"])
+          else:
+            hc_answers[raid_id] = False
+
+          raid_answer_m = await do_raid_request("mythic", raid_id)
+
+          if raid_answer_m.status_code == 200:
+            raid_answers_m[raid_id] = raid_answer_m.json()
+            m_answers[raid_id] = True
+            for m_boss_prog in raid_answers_m[raid_id]["progression"]:
+              m_guilds_count[raid_id] += (int)(m_boss_prog["totalGuilds"])
+          else:
+            m_answers[raid_id] = False
 
         idx += 1
         await inter.edit_original_response(prog_msg + ' [' + (str)(floor(100 * idx / (all_count + 1))) + '%]')
           
-        for guild in ua_wow_guilds:
+        for guild in raiding_guilds:
+            score = 0
+            nm_bosses_killed = 0
+            hc_bosses_killed = 0
+            m_bosses_killed = 0
+            total_bosses = 0
             idx += 1
             guild_name = guild[1].replace('-', ' ').capitalize()
             realm_name = guild[0].replace('-', ' ').capitalize()
@@ -510,68 +572,79 @@ async def proccess_command(command, args, inter):
             await inter.edit_original_response(prog_msg + ' [' + (str)(floor(100 * idx / (all_count + 1))) + '%]')
             if answer.status_code == 200:
                 answer = answer.json()
-                bosses_count = (int)(answer['raid_progression'][CURR_RAID_ID]['total_bosses'])
-                m_rank = (int)(answer['raid_rankings'][CURR_RAID_ID]['mythic']['world'])
-                hc_rank = (int)(answer['raid_rankings'][CURR_RAID_ID]['heroic']['world'])
-                nm_rank = (int)(answer['raid_rankings'][CURR_RAID_ID]['normal']['world'])
-                hc_prog = (int)(answer['raid_progression'][CURR_RAID_ID]['heroic_bosses_killed'])
-                nm_prog = (int)(answer['raid_progression'][CURR_RAID_ID]['normal_bosses_killed'])
-                m_prog = (int)(answer['raid_progression'][CURR_RAID_ID]['mythic_bosses_killed'])
+                for raid_id in CURR_RAID_IDS:
+                  bosses_count = (int)(answer['raid_progression'][raid_id]['total_bosses'])
+                  total_bosses += bosses_count
 
-                m_full_prog_guilds = 24
-                hc_full_prog_guilds = 5985
-                nm_full_prog_guilds = 13409
-              
-                hc_coef = nm_full_prog_guilds / hc_full_prog_guilds
-                m_coef = nm_full_prog_guilds / m_full_prog_guilds
+                  m_rank = (int)(answer['raid_rankings'][raid_id]['mythic']['region'])
+                  hc_rank = (int)(answer['raid_rankings'][raid_id]['heroic']['region'])
+                  nm_rank = (int)(answer['raid_rankings'][raid_id]['normal']['region'])
+                  hc_prog = (int)(answer['raid_progression'][raid_id]['heroic_bosses_killed'])
+                  nm_prog = (int)(answer['raid_progression'][raid_id]['normal_bosses_killed'])
+                  m_prog = (int)(answer['raid_progression'][raid_id]['mythic_bosses_killed'])
 
-                if (nm_prog == 0):
-                  nm_rank = 2 * nm_guilds_count
-              
-                if (m_prog == 0):
-                  m_rank = 2 * m_guilds_count
+                  if nm_rank > 0 and (difficulty == "n" or difficulty == "all"):
+                    score += 1 / nm_rank
 
-                if (hc_prog == 0):
-                  hc_rank = 2 * hc_guilds_count
-              
-                min_rank = min(m_rank, hc_rank, nm_rank)
+                  if hc_rank > 0 and (difficulty == "h" or difficulty == "all"):
+                    score += 10 / hc_rank
 
-                max_guilds_count = max(m_guilds_count, hc_guilds_count, nm_guilds_count)
+                  if m_rank > 0 and (difficulty == "m" or difficulty == "all"):
+                    score += 100 / m_rank
 
-                m_score = 2 * m_guilds_count - m_rank
-                hc_score = 2 * hc_guilds_count - hc_rank
-                nm_score = 2 * nm_guilds_count - nm_rank
 
-                if (min_rank == 0):
-                  min_rank = 2 * max_guilds_count
-              
-                rank_points = max(0, 2 * max_guilds_count - min_rank)
-              
-                score = floor((m_score * m_coef + hc_score * hc_coef + nm_score) / 1000)
+                  score = floor(score * 10000)
 
-                nm_prog_str = str(nm_prog) + "/" + str(bosses_count) + " N "
-                hc_prog_str = str(hc_prog) + "/" + str(bosses_count) + " H "
-                m_prog_str = str(m_prog) + "/" + str(bosses_count) + " M "
+                  nm_bosses_killed += nm_prog
+                  hc_bosses_killed += hc_prog
+                  m_bosses_killed += m_prog
 
-                if (nm_prog == 0):
+                nm_prog_str = str(nm_bosses_killed) + "/" + str(total_bosses) + " N "
+                hc_prog_str = str(hc_bosses_killed) + "/" + str(total_bosses) + " H "
+                m_prog_str = str(m_bosses_killed) + "/" + str(total_bosses) + " M "
+
+                if (nm_bosses_killed == 0 or (difficulty != "n" and difficulty != "all")):
                   nm_prog_str = ""
-                if (hc_prog == 0):
+                if (hc_bosses_killed == 0 or (difficulty != "h" and difficulty != "all")):
                   hc_prog_str = ""
-                if (m_prog == 0):
+                if (m_bosses_killed == 0 or (difficulty != "m" and difficulty != "all")):
                   m_prog_str = ""
 
-                if (nm_prog + hc_prog + m_prog == 0):
-                  prog_str_full = "Нема прогресу"
+                if difficulty == "all":
+                  if nm_bosses_killed + hc_bosses_killed + m_bosses_killed == 0:
+                    prog_str_full = "Нема прогресу"
+                  else:
+                    prog_str_full = m_prog_str + hc_prog_str + nm_prog_str
                 else:
-                  prog_str_full = m_prog_str + hc_prog_str + nm_prog_str
+                  bosses_killed = {
+                    "m": m_bosses_killed,
+                    "h": hc_bosses_killed,
+                    "n": nm_bosses_killed,
+                  }
+                  prog_strs = {
+                    "m": m_prog_str,
+                    "h": hc_prog_str,
+                    "n": nm_prog_str,
+                  }
+                  prog_str_full = "Нема прогресу" if bosses_killed[difficulty] == 0 else prog_strs[difficulty]
+
+                guild_name_len = len(guild_name + realm_name)
               
-                result_list[guild_name] = (prog_str_full, score, realm_name, len(answer['members']), hc_prog == bosses_count)
+                if guild_name_len > max_guild_name_length:
+                  max_guild_name_length = guild_name_len
+              
+                result_list[guild_name] = (prog_str_full, score, realm_name, len(answer['members']), False)
 
         sorted_guilds = sorted(result_list.items(), key=lambda x:x[1][1], reverse=True)
         sorted_guilds = dict(sorted_guilds)
 
         for i, (k, v) in enumerate(sorted_guilds.items()):
-            returnmsg += str(i+1) + ". " + k + '-' + v[2] + " ``" + v[0] + "``, ``Raid score: " + (str)(v[1]) + "``, ``" + (str)(v[3]) + " персонажів``\n"
+            guild_name_len = len(k + v[2])
+            needed_spaces = max_guild_name_length - guild_name_len
+            returnmsg += str(i+1) + ". " + k + '-' + v[2]
+            for j in range(needed_spaces):
+              returnmsg += "  "
+            returnmsg += " ``" + v[0] + "``, ``Raid score: " + (str)(v[1]) + "``, ``" + (str)(v[3]) + " персонажів``\n"
         
         await inter.followup.send(returnmsg, ephemeral=EPHEMERAL_ANSWERS)
         #await inter.delete_original_message()
